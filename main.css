@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'establishRetrosansOTF';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.container{
+  font-family: 'establishRetrosansOTF';
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 메뉴 */
+header{
+  width: 1200px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav{
+  display: flex;
+}
+#menu, .menu-bar{
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  transition-duration: 1s;
+  font-size: 20px;
+}
+
+.menu-bar>a:focus{
+  color: #c8c8c8;
+}
+.menu-bar>a:hover{
+  color: #c8c8c8;
+}  
+.menu-bar>a:active{
+  color: #c8c8c8;
+}
+
+
+/*main 부분*/
+#main{
+  width: 1200px;
+  height: 580px;
+  margin: auto; 
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+section{
+  width: 1200px;
+  height: 580px;
+}
+
+/* main-Home  */
+/* #home{
+ background-color: blue; 
+} */
+#frontend{
+  font-size: 6em;
+}
+.section_{
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  white-space: nowrap;
+
+}
+/* about */
+#about{
+/* background-color: yellowgreen; */
+  font-size:1.5em;
+}
+.about-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+
+}
+#intro{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: right;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+#skills{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size:1.5em;
+  text-align: left;
+  gap: 30px;
+  padding-top: 20px;
+  word-spacing: 25px;     
+}
+
+
+/*proj*/
+#proj{
+ /* background-color: pink;  */
+ width: 1200px;
+ height: 580px;
+
+}
+.proj-content-title{
+  width: 1200px;
+  height: 500px;
+  display: none;
+  border-radius: 15px;
+  float: left;
+}
+
+.proj-title{
+  display: inline-block;
+}
+hr{
+  width: 500px;
+}
+.proj-url{
+  width: 100px;
+  height: 20px;
+  justify-content: center;   /* 수평 가운데 정렬 */
+  align-items: center; 
+}
+.scope{
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+.proj-content{
+  width: 120px;
+  height: 100px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;           /* 글자 크기 설정 */
+  margin: 3px;
+  padding: 0;
+  display: flex;
+  justify-content: center;   /* 수평 가운데 정렬 */
+  align-items: center;       /* 수직 가운데 정렬 */
+}
+
+
+#archiving_{
+background-color: teal;
+
+}    
+
+#h2-contact{
+  font-size: 3rem;
+}
+
+.archiv-title{
+  font-size: 1.5rem;
+}
+.archiv-title>a:hover{
+  color: pink;
+}
+
+/*footer*/
+footer{
+  position: relative;
+  width: 200px;
+  height: 90px;
+  margin: auto; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  border-top-left-radius: 450px;
+  border-top-right-radius: 450px;
+  color: white;
+  font-size: large;
+  text-align: center;
+  display: flex;
+  justify-content: center;  /* 수평 중앙 정렬 */
+  align-items: center;      /* 수직 중앙 정렬 */
+}
+
+#footer-menu {
+  margin: 0; /* 기본 여백 제거 */
+}

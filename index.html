@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./main.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script defer src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="#home">PortFolio</a></h1>
+      <nav>
+        <ul id="menu">
+          <li class="menu-bar"><a href="#home">Home</a></li>
+          <li class="menu-bar"><a href="#about">About</a></li>
+          <li class="menu-bar"><a href="#proj">Project</a></li>
+          <li class="menu-bar"><a href="#archiving">Archiving</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main">
+        <section class="section_" id="home">
+          <p id="frontend"></p>
+        </section>
+        <section class="section_" id="about">
+          <article>
+            <div class="about-content" id="intro">
+              <h2>About me!</h2>
+              <p class="about_sentence">안녕하세요. 박선경입니다.
+              <br>호기심이 많아 무언가를 배우는 것을 좋아하며 
+              <br>긍정적인 마인드를 가지고 매 순간 최선을 다해 
+              <br>맡은 일을 수행합니다.</p>
+            </div>
+            <div class="about-content" id="skills">
+              <h2>Skills</h1>
+                <p class="about_sentence">
+                  HTML CSS<br>
+                  JS Python C Java<br>
+                  Flask React.js Flutter<br>
+                  Firebase Postgresql<br>
+                  Notion Slack
+                </p>
+            </div>
+          </article>
+        </section>
+        <section class="section_" id="proj">
+            <span class="proj-content-title">PROJECT</span>
+            <h2 class="proj-title">Flutter</h2>
+            <hr class="proj-title">
+            <br>
+            <div class="scope">
+              <div class="proj-content">
+                <a class="proj-url" href="https://turquoise-walkover-167.notion.site/flutter-1bfca994091c808bbf83fa30536ee72d?pvs=4" target="_blank">
+                  숫자 맞추기<br> 게임
+                </a>
+              </div>
+              <div class="proj-content">
+                <a class="proj-url" href="https://turquoise-walkover-167.notion.site/flutter-api-1c5ca994091c80819c89f8463571601a?pvs=4" target="_blank">
+                  영어 뉴스 <br>한눈에 보기
+                </a>
+              </div>
+          
+            </div>
+            <h2 class="proj-title">Team Proj</h2>
+              <hr class="proj-title">
+              <br>
+            <div class="scope">
+              <div class="proj-content">
+                <a class="proj-url" href="https://turquoise-walkover-167.notion.site/REACTJS-BLOG-WEB-1c0ca994091c80139371c10c8d8a138e?pvs=4" target="_blank">
+                  SNS WEB
+                </a>
+              </div>
+            </div>
+            <h2 class="proj-title">etc</h2>
+            <hr class="proj-title">
+            <br>
+            <div class="scope">
+              <div class="proj-content">
+                <a class="proj-url" href="https://turquoise-walkover-167.notion.site/C-1c6ca994091c80a4b365d84ff0db9beb?pvs=4" target="_blank">
+                  C<br>좌석 예약
+                </a>
+              </div>
+              <div class="proj-content">
+                <a class="proj-url" href="https://turquoise-walkover-167.notion.site/flask_app-176ca994091c8030b9a9d8804197fc07?pvs=4" target="_blank">
+                  flask <br> My Note
+                </a>
+              </div>
+              <div class="proj-content">
+                <a class="proj-url" href="https://turquoise-walkover-167.notion.site/flask_opencv_hand-gesture-cognition-176ca994091c806e8b47f548ebb954e7?pvs=4" target="_blank">
+                  flask<br> 손 인식
+                </a>
+              </div>   
+            </div>
+        </section>
+        <section class="section_" id="archiving">
+          <article>
+            <h2 id="h2-contact">CONTACT</h2>
+            <div class="archiving-content">
+              <p class="archiv-title">MAIL</p>
+              <p class="archiv-title">psk7164@naver.com</p>
+            </div>
+            <div class="archiving-content">
+              <p class="archiv-title">
+                BLOG
+              </p>
+              <p class="archiv-title">
+                <a href="https://blog.naver.com/hi_jelly11" target="_blank">
+                  https://blog.naver.com/hi_jelly11
+                </a>
+              </p>
+              <div class="archiving-content">
+                <p class="archiv-title">Notion</p>
+                <p class="archiv-title">
+                  <a href="https://turquoise-walkover-167.notion.site/460cfb8f08664d09a16316a68b09178f?pvs=4" target="_blank">
+                    Notion_page
+                  </a>
+                </p>
+              </div>
+          </article>
+        </section>
+    </div>
+    <footer>
+      <p id="footer-menu">Home</p>
+    </footer>
+  </div>
+  <script>
+
+    /* 메뉴 이벤트 실행 */
+    const menu_bar = document.getElementsByClassName('menu-bar');
+    let lastClickedElement = null;
+    const footer_menu =document.getElementById('footer-menu');
+
+    Array.from(menu_bar).forEach(element => {
+    // 클릭 이벤트 리스너 추가
+      element.addEventListener('click', function() {
+        if (lastClickedElement && lastClickedElement !== element) {
+              lastClickedElement.style.color = 'black';   
+        }
+        element.style.color = '#c8c8c8';
+        lastClickedElement = element;
+       // alert('클릭됨: ' + element.textContent);
+
+        if(element.textContent == 'Home'){  // Home클릭하면 txt 타이핑 실행
+          footer_menu.textContent = "Home";
+          setTimeout(()=>{
+            cnt = 0;
+            frontend.innerHTML = '';
+            typing = setInterval(textincrease, 50);
+          }, 1000);
+        } 
+
+        // -------------------------- 
+        // proj menu
+        if(element.textContent == 'Project'){
+          footer_menu.textContent = "Project";
+          console.log('project page!');
+          const proj_content = document.getElementsByClassName('proj-content');
+          console.log(proj_content[0]);
+          proj_content[0].style.display = 'block';
+           
+        }else if(element.textContent == 'About'){
+          footer_menu.textContent = "About";
+        }else if(element.textContent == 'Archiving'){
+          footer_menu.textContent = "Archiving";
+        }
+      });
+    });
+
+    /*Home*/
+    const frontend = document.getElementById('frontend') // home 텍스트 가져오기
+
+    cnt = 0;
+    const txt = `박선경 Portfolio`;
+    
+    function textincrease(){
+      if(cnt < txt.length){
+        frontend.innerHTML += txt[cnt];
+      }else{ 
+        clearInterval(typing); // 텍스트를 다 입력했으면 종료
+      }
+      cnt++;
+      if(cnt == txt.length){
+        clearInterval(typing);
+      }
+      
+    }
+    
+    typing = setInterval(textincrease, 100); // 반복 실행
+
+    const projElements = document.querySelectorAll('.proj-content');
+
+    projElements.forEach((element) => {
+      element.addEventListener('mouseenter', () => {
+        element.classList.add('animate__animated', 'animate__bounce'); // 원하는 애니메이션 클래스 추가
+      });
+
+      // 애니메이션이 끝난 후 클래스를 제거하여 다시 애니메이션이 실행되도록 설정
+      element.addEventListener('animationend', () => {
+        element.classList.remove('animate__bounce');
+      });
+    });
+
+  </script>
+
+</body>
+</html>
